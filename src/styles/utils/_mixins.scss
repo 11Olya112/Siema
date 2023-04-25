@@ -1,0 +1,14 @@
+@mixin hover($propertys...) {
+  transition: all 0.5s;
+  &:hover {
+    @each $property, $value in $propertys {
+      #{$property}: $value;
+    }
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 820px) {
+    @content;
+  }
+}

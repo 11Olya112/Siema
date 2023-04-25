@@ -1,0 +1,48 @@
+{
+  "questions": [
+    {
+      "question": "How old your elder brother was 10 years before you was born, mate?",
+      "answers": [
+        { "text": "A 10 years", "correct": true },
+        { "text": "B 11 years", "correct": false },
+        { "text": "C 12 years", "correct": false },
+        { "text": "D 14 years", "correct": false }
+      ],
+      "m": 1000
+    },
+    {
+      "question": "Who wrote the Harry Potter series?",
+      "answers": [
+        { "text": "J.K. Rowling", "correct": true },
+        { "text": "Stephen King", "correct": false },
+        { "text": "George R.R. Martin", "correct": false },
+        { "text": "Dan Brown", "correct": false }
+      ],
+      "m": 2000
+    },
+    {
+      "question": "What is the tallest mountain in the world?",
+      "answers": [
+        { "text": "Mount Everest", "correct": true },
+        { "text": "K2", "correct": false },
+        { "text": "Kangchenjunga", "correct": false },
+        { "text": "Lhotse", "correct": false }
+      ],
+      "m": 3000
+    }
+  ],
+  "money": [
+    {"amount": "$1,000,000"},
+    {"amount": "$500,000"},
+    {"amount": "$250,000"},
+    {"amount": "$125,000"},
+    {"amount": "$64,000"},
+    {"amount": "$32,000"},
+    {"amount": "$16,000"},
+    {"amount": "$8,000"},
+    {"amount": "$4,000"},
+    {"amount": "$2,000"},
+    {"amount": "$1,000"},
+    {"amount": "$500"}
+  ]
+}

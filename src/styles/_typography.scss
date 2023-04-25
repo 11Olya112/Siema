@@ -1,0 +1,20 @@
+h1 {
+  @extend %h1;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  background-color: transparent;
+  color: inherit;
+
+  @include hover(transform scale(1.2));
+}
+
+img {
+  @include hover(transform scale(1.1));
+}
+
+li {
+  list-style: none;
+}

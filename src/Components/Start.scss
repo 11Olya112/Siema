@@ -1,0 +1,46 @@
+.container {
+  height: auto;
+  padding: 104px 16px 48px;
+  text-align: center;
+
+  /* @include onDesktop {
+    padding: 229px 80px 304px;
+  }; */
+
+  &__image {
+    margin-bottom: 24px;
+  }
+
+  &__score {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 116%;
+    color: #1c1c21;
+    margin: 30px 0 8px;
+    opacity: 0.5;
+  }
+
+  &__flex {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 116%;
+    margin: 0 0 102px;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 16px 24px;
+    color: #fff;
+    background-color: #3891b1;
+    border-radius: 8px;
+    border: none;
+  }
+}

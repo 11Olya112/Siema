@@ -1,0 +1,10 @@
+@import "./utils";
+@import "./fonts";
+@import "./typography";
+
+@import "./block/nav.scss";
+@import "./block/main.scss";
+
+body {
+  background: $c-gray;
+}

@@ -1,27 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
-
-interface Props {
-  onClick: () => void;
-}
-
-export const Provider: React.FC<Props> = React.memo(
-  ({ onClick, children }) => (
-    <button
-      type="button"
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  ),
-);
+import { Start } from './Components/Start';
+import { Game } from './Components/Game';
+import { Over } from './Components/Over';
 
 export const App: React.FC = () => {
+  const [componentIndex, setComponentIndex] = useState(0);
+
+  const components = [
+    <Start key={componentIndex} onNext={() => setComponentIndex(1)} />,
+    <Game key={componentIndex} onNext={() => setComponentIndex(2)} />,
+    <Over key={componentIndex} onNext={() => setComponentIndex(0)} />,
+  ];
+
   return (
     <div className="starter">
-      <Provider onClick={() => ({})}>
-        <TodoList />
-      </Provider>
+      {components[componentIndex]}
     </div>
   );
 };
